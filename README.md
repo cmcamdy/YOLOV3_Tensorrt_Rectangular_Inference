@@ -6,27 +6,48 @@
 
 ## 项目结构图
 > 模型部署源代码（Jetson Nano）
+> 
 >   │  detect_demo.py					：演示demo
 >   │  models.py							 ：只支持方形推理的模型	
->   │  models_rect.py					 ：支持方形推理和矩形推理的模型						
+>   
+>   │  models_rect.py					 ：支持方形推理和矩形推理的模型					
+>   	
 >   │  README.md						：说明文档
+>   
 >   │  torch_model_2_trt.py			：模型转换demo
+>   
 >   │
+>   
 >   ├─config
+>   
 >   │  请下载附件获取模型结构文件（cfg）
+>   
 >   │
+>   
 >   ├─data									
+>   
 >   │  │  helmet.names					：类别，hat,person
+>   
 >   │  │
+>   
 >   │  ├─custom
+>   
 >   │  │  ├─images						  ：保存图片
+>   
 >   │  │  └─labels                 			：保存标签
+>   
 >   │  ├─output								：保存检测结果
+>   
 >   │  └─samples  							：保存测试原数据
+>   
 >   ├─utils
+>   
 >   │      datasets.py						：进行数据加载
+>   
 >   │      parse_config.py				 ：解析cfg
+>   
 >   │      utils.py							   ：工具包
+>   
 >   └─weights								 ：保存权重文件,请下载附件获取模型权重文件
 
 ## 代码使用说明
