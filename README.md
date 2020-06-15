@@ -8,13 +8,14 @@
 > 模型部署源代码（Jetson Nano）
 > 
 >   │  detect_demo.py					：演示demo
->   │  models.py							 ：只支持方形推理的模型	
+>   
+>   │  models.py					：只支持方形推理的模型	
 >   
 >   │  models_rect.py					 ：支持方形推理和矩形推理的模型					
 >   	
->   │  README.md						：说明文档
+>   │  README.md					：说明文档
 >   
->   │  torch_model_2_trt.py			：模型转换demo
+>   │  torch_model_2_trt.py				：模型转换demo
 >   
 >   │
 >   
@@ -32,23 +33,23 @@
 >   
 >   │  ├─custom
 >   
->   │  │  ├─images						  ：保存图片
+>   │  │  ├─images					：保存图片
 >   
 >   │  │  └─labels                 			：保存标签
 >   
->   │  ├─output								：保存检测结果
+>   │  ├─output						：保存检测结果
 >   
->   │  └─samples  							：保存测试原数据
+>   │  └─samples  					：保存测试原数据
 >   
 >   ├─utils
 >   
->   │      datasets.py						：进行数据加载
+>   │      datasets.py					：进行数据加载
 >   
 >   │      parse_config.py				 ：解析cfg
 >   
->   │      utils.py							   ：工具包
+>   │      utils.py					：工具包
 >   
->   └─weights								 ：保存权重文件,请下载附件获取模型权重文件
+>   └─weights						：保存权重文件,请下载附件获取模型权重文件
 
 ## 代码使用说明
 
@@ -101,7 +102,7 @@
 
 - 具体流程可以参考下图
 
-- ![](https://img-blog.csdnimg.cn/20200418111341728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5bXVhbXVh,size_16,color_FFFFFF,t_70)
+- ![来自博客的图](https://img-blog.csdnimg.cn/20200418111341728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5bXVhbXVh,size_16,color_FFFFFF,t_70)
 
 - 矩形推理发生的地方位于两个阶段,代码地址分别是:utils.datasets.py和models_rect.py中：
 	- 1、LoadImages：```dataset = LoadImages(path=opt.source, img_size=(opt.img_size, opt.img_size), auto=opt.rect)```
