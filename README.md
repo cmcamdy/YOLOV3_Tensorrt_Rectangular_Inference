@@ -103,7 +103,7 @@
 - 具体流程可以参考下图
 
 - ![来自博客的图](https://img-blog.csdnimg.cn/20200418111341728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5bXVhbXVh,size_16,color_FFFFFF,t_70)
-
+- [如想看具体过程，可参考我的博客：椰子奶糖的Jetson nano学习历程](https://blog.csdn.net/symuamua/article/details/105423655)
 - 矩形推理发生的地方位于两个阶段,代码地址分别是:utils.datasets.py和models_rect.py中：
 	- 1、LoadImages：```dataset = LoadImages(path=opt.source, img_size=(opt.img_size, opt.img_size), auto=opt.rect)```
 	- 2、YOLOLayer的forward：```yolo_head = YOLOHead(config_path=opt.model_def)```
